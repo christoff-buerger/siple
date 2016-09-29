@@ -2,7 +2,7 @@
  * <copyright>
  *
  * This program and the accompanying materials are made available under the
- * terms of the BSD 3-clause license which accompanies this distribution.
+ * terms of the MIT license (X11 license) which accompanies this distribution.
  *
  * </copyright>
  */
@@ -17,7 +17,7 @@ import siple.State.*;
  * conversions of terminal nodes' value --- or distribute local context
  * information to remotely located nodes further down the AST or vice versa.
  * To this end, the access support API is provided.
- * @author C. Bürger
+ * @author Christoff Bürger
  */
 aspect AccessSupport {
 	// AST nodes can be compared w.r.t. their unique Dewey addresses.
@@ -63,7 +63,7 @@ aspect AccessSupport {
  * must be associated with exactly one entity (E.g. references) has an
  * attribute, that refers to the associated construct or is null, iff the
  * construct does not exist or is ambiguous.
- * @author C. Bürger
+ * @author Christoff Bürger
  */
 aspect NameAnalysis {
 	// Ordinary name space:
@@ -81,7 +81,7 @@ aspect NameAnalysis {
  * 
  * Further, SiPLE supports automatic type coercions from integer to real
  * numbers.
- * @author C. Bürger
+ * @author Christoff Bürger
  */
 aspect TypeAnalysis {
 	syn Type Declaration.Type();
@@ -115,7 +115,7 @@ aspect ConstraintChecking {
  * to interpret single statements or to compute the value of single
  * expressions starting from a given interpretation state. Again, errors
  * encountered while interpretation result in appropriate exceptions.
- * @author C. Bürger
+ * @author Christoff Bürger
  */
 aspect Interpretation {
 	syn State CompilationUnit.Interpret();

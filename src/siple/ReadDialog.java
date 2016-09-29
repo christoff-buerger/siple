@@ -1,3 +1,11 @@
+/**
+ * <copyright>
+ *
+ * This program and the accompanying materials are made available under the
+ * terms of the MIT license (X11 license) which accompanies this distribution.
+ *
+ * </copyright>
+ */
 package siple;
 
 import java.awt.*;
@@ -10,7 +18,7 @@ import siple.ast.*;
  * Simple dialog used throughout interpretation to ask the user for a new value
  * of a certain type, such that a <i>SiPLE</i> <tt>Read</tt> statement can be
  * processed.
- * @author C. Bürger
+ * @author Christoff Bürger
  */
 public class ReadDialog {
 	private static Object result = null;

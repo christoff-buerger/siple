@@ -2,7 +2,7 @@
  * <copyright>
  *
  * This program and the accompanying materials are made available under the
- * terms of the BSD 3-clause license which accompanies this distribution.
+ * terms of the MIT license (X11 license) which accompanies this distribution.
  *
  * </copyright>
  */
@@ -21,12 +21,12 @@ import beaver.Parser.Exception;
  * otherwise {@link #rtype} must be <tt>null</tt>.<br>
  * 2) Iff {@link Type#domain} <tt>==</tt> {@link Domains#Pointer},
  * {@link #rtype} must not be {@link #Undefined}.
- * @author C. Bürger
+ * @author Christoff Bürger
  */
 public class Type {
 	/**
 	 * Enumeration of SiPLE's basic type domains.
-	 * @author C. Bürger
+	 * @author Christoff Bürger
 	 */
 	public static enum Domains {
 		Boolean,

@@ -2,7 +2,7 @@
  * <copyright>
  *
  * This program and the accompanying materials are made available under the
- * terms of the BSD 3-clause license which accompanies this distribution.
+ * terms of the MIT license (X11 license) which accompanies this distribution.
  *
  * </copyright>
  */
@@ -21,7 +21,7 @@ import siple.ast.*;
  * InterpretationException interpretation exception}, iff the program is
  * erroneous. Since <i>SiPLE</i> is Turing complete, the interpretation might
  * also not terminate at all.
- * @author C. Bürger
+ * @author Christoff Bürger
  */
 public final class State {
 	/**
@@ -77,7 +77,7 @@ public final class State {
 	 * bindings)</li> 
 	 * <li>(4) The procedure's {@link #returnValue return value} (given, iff
 	 * the procedure's execution finished)</li></ul>
-	 * @author C. Bürger
+	 * @author Christoff Bürger
 	 */
 	public static final class Frame {
 		/** See {@link Frame}. */
@@ -93,7 +93,7 @@ public final class State {
 	
 	/**
 	 * Simple wrapper class to represent addressable memory locations.
-	 * @author C. Bürger
+	 * @author Christoff Bürger
 	 */
 	public static final class MemoryLocation {
 		/**

@@ -2,7 +2,7 @@
  * <copyright>
  *
  * This program and the accompanying materials are made available under the
- * terms of the BSD 3-clause license which accompanies this distribution.
+ * terms of the MIT license (X11 license) which accompanies this distribution.
  *
  * </copyright>
  */
@@ -41,7 +41,7 @@ import java.util.*;
  *    (thus <tt>ANC_CHILD_A.compareTo(ANC_CHILD_B) == 1</tt>).<br>
  * If <tt>A</tt> is <i>smaller</i> than <tt>B</tt>, <tt>B</tt> must be
  * <i>greater</i> than <tt>A</tt>.
- * @author C. Bürger
+ * @author Christoff Bürger
  */
 public class DeweyAddress implements Comparable<DeweyAddress>, Cloneable {
 	private List<Integer> address;
