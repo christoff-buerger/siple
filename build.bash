@@ -13,7 +13,7 @@ clear_all(){
 }
 
 make_syntax(){
-	java -jar tools/jflex.jar --quiet -d src-gen/siple specifications/Lexer.jflex
+	java -jar tools/jflex.jar -d src-gen/siple specifications/Lexer.jflex
 	java -jar tools/beaver.jar -c -d src-gen specifications/Parser.beaver
 }
 
