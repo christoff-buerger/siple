@@ -11,7 +11,7 @@
  * @author Christoff Bürger
  */
 aspect Interpretation {
-	/** Program Interpretation */
+	/* Program Interpretation */
 	
 	eq CompilationUnit.Interpret() {
 		if (!IsCorrectLocal())
@@ -102,7 +102,7 @@ aspect Interpretation {
 		Value(vm); /* May contain procedure calls with side effects. */
 	}
 	
-	/** Expression Evaluation */
+	/* Expression Evaluation */
 	
 	public Object Constant.Value(State vm) {
 		if (!IsCorrectLocal())
@@ -147,7 +147,7 @@ aspect Interpretation {
 		return getExpression().Value(vm);
 	}
 	
-	/** ALU Operations **/
+	/* ALU Operations */
 	
 	public Object Not.Value(State vm) {
 		if (!IsCorrectLocal())

@@ -11,7 +11,7 @@
  * @author Christoff Bürger
  */
 aspect TypeAnalysis {
-	/** Statements with Type Constraints **/
+	/* Statements with Type Constraints */
 	
 	eq ProcedureDeclaration.Type() {
 		Type[] paras = new Type[getNumParameter()];
@@ -48,7 +48,7 @@ aspect TypeAnalysis {
 		return type;
 	}
 	
-	/** Expressions' Type **/
+	/* Expressions' Type */
 	
 	eq Constant.Type() {
 		if (AsBoolean() != null)

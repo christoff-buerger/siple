@@ -11,7 +11,7 @@
  * @author Christoff Bürger
  */
 aspect NameAnalysis {
-	/** Ordinary Name Analysis */
+	/* Ordinary Name Analysis */
 	
 	syn LinkedList<Declaration> CompilationUnit.LookUp(String name) {
 		LinkedList<Declaration> result = new LinkedList<Declaration>();
