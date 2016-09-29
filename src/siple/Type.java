@@ -69,39 +69,6 @@ public class Type {
 	public static final Type ERROR_TYPE = new Type(Domains.ERROR_TYPE);
 	
 	/**
-	 * Parses a given value string to a concrete instance of this class. It is called by the 
-	 * basic EMF EFactory to create instances through the EDataType Binding. 
-	 *
-	 * @param value String representation of an instance of Type.
-	 * @return A corresponding instance.
-	 */
-	public static Type valueOf(String value){
-	if("Integer".equals(value)){
-			return Integer;
-		}
-		else if("Boolean".equals(value)){
-			return Boolean;
-		}
-		else if("Real".equals(value)){
-			return Real;
-		}  
-		else if(value.startsWith("Pointer") || value.startsWith("Procedure")){
-			Lexer scanner = new Lexer(new StringReader(value));
-			Parser parser = new Parser();	
-			try {
-				Type type = (Type)parser.parse(scanner, Parser.AltGoals.Type);
-				return type;
-			} catch (IOException e) {
-				e.printStackTrace();
-			} catch (Exception e) {
-				e.printStackTrace();
-			}	
-		}
-		//consider pointers and procedure types too!	
-		return  Undefined;
-	}
-	
-	/**
 	 * Construct a pointer for the given type.
 	 * @param rtype Type the resulting pointer points to.
 	 * @return Pointer of type "pointer to <tt>rtype</tt>".
