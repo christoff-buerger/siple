@@ -8,7 +8,7 @@
  */
 
 /*
- * @author Christoff Bürger
+ * @author Christoff Buerger
  */
 %package "siple";
 %import "siple.ast.*";
