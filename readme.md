@@ -6,7 +6,7 @@
 
 # Synopsis
 
-_SiPLE_ is a *s*imple *i*mperative *p*rogramming *l*anguage *e*xample designed as a compiler construction introduction. Its implementation is based on well-known metacompiler techniques, demonstrating the specification-driven generation of common compiler parts. It compromises a [_JFlex_](http://www.jflex.de)-based lexer (regular expressions), [_Beaver_](http://beaver.sourceforge.net)-based parser (LALR(1)-grammar) and [_JastAdd_](http://jastadd.org)-based semantic analyser and interpreter (reference attribute grammar).
+_SiPLE_ is a **s**imple **i**mperative **p**rogramming **l**anguage **e**xample designed as a compiler construction introduction. Its implementation is based on well-known metacompiler techniques, demonstrating the specification-driven generation of common compiler parts. It compromises a [_JFlex_](http://www.jflex.de)-based lexer (regular expressions), [_Beaver_](http://beaver.sourceforge.net)-based parser (LALR(1)-grammar) and [_JastAdd_](http://jastadd.org)-based semantic analyser and interpreter (reference attribute grammar).
 
 _SiPLE_ supports:
 
