@@ -94,9 +94,7 @@ aspect Interpretation {
 		if (!IsCorrectLocal())
 			throw new InterpretationException();
 		MemoryLocation loc = (MemoryLocation)getExpression().Value(vm);
-		loc.value = ReadDialog.execute(
-				getExpression().Type(),
-				vm.stdOut.toString());
+		loc.value = ReadDialog.execute(Type(), vm.stdOut.toString());
 	}
 	public void Expression.Interpret(State vm) {
 		Value(vm); /* May contain procedure calls with side effects. */

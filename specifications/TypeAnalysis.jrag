@@ -45,7 +45,7 @@ aspect TypeAnalysis {
 			return Type.ERROR_TYPE;
 		if (type.rtype.isPointer() || type.rtype.isProcedure() || type.rtype.isUndefined())
 			return Type.ERROR_TYPE;
-		return type;
+		return type.rtype;
 	}
 	
 	/* Expressions' Type */
